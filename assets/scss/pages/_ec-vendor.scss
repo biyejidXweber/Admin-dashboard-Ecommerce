@@ -1,0 +1,55 @@
+.ec-vendor-list {
+    .vendor-thumb {
+        width: 45px;
+        height: 45px;
+        border-radius: 15px;
+    }
+}
+.ec-vendor-wrapper {
+    .ec-card-space {
+        @include media-breakpoint-down(sm) {
+            padding: 15px !important;
+        }
+    }
+}
+.ec-vendor-card {
+    .card-default {
+        overflow: inherit;
+        .ec-vendor-detail {
+            h6 {
+                margin: 10px 0 10px 0;
+                padding: 5px 2px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.2;
+                color: $secondary;
+                text-transform: capitalize !important;
+                border-radius: 10px;
+                background: #f1f1f1;
+            }
+            h5 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 600;
+                line-height: 1.2;
+                color: $secondary;
+                font-size: 15px;
+            }
+        }
+        .view-detail {
+            position: absolute;
+            top: 6px;
+            right: 15px;
+            font-size: 20px;
+            color: #bbb;
+            &:hover {
+                color: $primary;
+            }
+        }
+        .vendor-info {
+            .img-fluid {
+                width: 150px;
+            }
+        }
+    }
+}

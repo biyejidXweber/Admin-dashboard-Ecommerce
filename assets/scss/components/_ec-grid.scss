@@ -1,0 +1,44 @@
+
+/* Body */
+#body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Wrapper */
+.wrapper {
+  display: flex;
+  align-items: stretch;    
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Page Wrapper */
+.ec-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ec-content-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+/* Content */
+.content {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px;
+  width: 100%;
+  @include media-breakpoint-down(md) { 
+    padding: 30px 15px;
+   }
+}
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

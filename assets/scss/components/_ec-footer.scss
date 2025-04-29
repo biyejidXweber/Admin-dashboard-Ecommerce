@@ -1,0 +1,17 @@
+/*===== FOOTER =====*/
+.main-footer {
+  background: $white;
+  padding: 15px;
+  color: #444444;
+  border-top: 1px solid $border-color;
+}
+
+.copyright {
+  padding : 15px;
+  border-top: 1px solid $border-color;
+  p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+  }
+}

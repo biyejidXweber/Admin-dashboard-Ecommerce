@@ -1,0 +1,73 @@
+/*===== PAGINATION =====*/
+
+.pagination {
+  justify-content: center;
+  .page-item {
+    &.active {
+      .page-link {
+        z-index: 3;
+      }
+    }
+  &:first-child {
+    .page-link {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+  &:last-child {
+    .page-link {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  }
+  .page-link {  
+    padding: 5px 10px;  
+    line-height: 17px;
+    color: $secondary;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.pagination-flat .page-item .page-link {
+  border: 0px;
+}
+
+.pagination-flat-rounded .page-item .page-link {
+  border-radius: 100%;
+}
+
+.pagination-seperated .page-item {
+  .page-link {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border-radius: 0;
+    @include media-breakpoint-down(sm) { 
+      padding: 5px 7px;
+     }
+  }
+  &:last-child .page-link {
+    margin-right: 0;
+  }
+  &:first-child .page-link {
+    margin-left: 0;
+  }
+}
+
+.pagination-seperated-rounded .page-item .page-link {
+  border-radius: 10px;
+}
+
+.border-rounded {
+  .page-item:last-child .page-link {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}

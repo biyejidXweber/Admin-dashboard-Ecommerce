@@ -1,0 +1,204 @@
+/*===== COMPACT SPACING =====*/
+
+.compact-spacing {
+
+  /* Navbar */
+  .navbar {
+    min-height: 60px;
+    transition: all .3s;
+    .sidebar-offcanvas-toggle,
+    .sidebar-toggle {
+      height: 60px;
+    }
+
+    /* Navbar Right */
+    .navbar-right {
+      .navbar-nav {
+        .user-menu {
+          .dropdown-toggle {
+            line-height: 60px;
+          }
+        }
+        .notifications-menu {
+          .dropdown-toggle {
+            line-height: 60px;
+          }
+        }
+        .right-sidebar-2-menu {
+          i {
+            line-height: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Github Icon */
+  .github-link {
+    top: -8px;
+    i {
+      top: 0px;
+      right: 5px;
+    }
+    svg {
+      width: 69px;
+      height: 69px;
+    }
+  }
+
+  /* App Brand */
+  .ec-brand {
+    a {
+      height: 62px;
+      line-height: 62px;
+      transition: all .3s;
+    }
+  }
+
+  /* App Brand */
+  #toast-container {
+    margin-top: 50px;
+  }
+
+  /* Right Sidebar 2 */
+  .right-sidebar-container-2 {
+    .right-sidebar-2-header {
+      padding: 11.5px 30px;
+      transition: all .3s;
+    }
+  }
+
+  /* Header Fix */
+  &.ec-header-fixed {
+    .ec-page-wrapper {
+      padding-top: 3.875rem;
+    }
+  }
+
+  /* Content */
+  .content {
+    @include media-breakpoint-up(xl) {
+      padding: 24px;
+      transition: all .3s;
+    }
+  }
+
+  /* Sidebar */
+  .sidebar {
+    .sidebar-inner {
+      >li {
+        >a {
+          padding: 12px 25px;
+        }
+      }
+    }
+  }
+
+  /* Compact Units */
+  .compact-units {
+    height: 365px !important;
+  }
+
+  /* Compact Notifications */
+  .compact-notifications {
+    height: 415px !important;
+  }
+
+  /* Media */
+  .media-border-bottom {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  /* Card */
+  .card-table-border-none,
+  .card-default {
+    .card-header {
+      padding: 15px;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-footer {
+      padding-left: 15px;
+      padding-right: 15px;
+      a {
+        padding: 7px 0 !important;
+      }
+    }
+  }
+
+  /* Analytics Data Height */
+  [analytics-data-height] {
+    height: 573px;
+  }
+
+  /* Polar Data Content */
+  [polar-data-content] {
+    margin-bottom: 20px;
+  }
+
+  /* Profile Data Height */
+  [Profile-data-height] {
+    min-height: 520px;
+  }
+
+  /* Activity Data Spacing */
+  [activity-data-spacing] {
+    margin-bottom: 39px;
+  }
+
+  /* User Profile */
+  .profile-right-spacing {
+    padding: 1.88rem 0 !important;
+    .nav-style-border {
+      padding-left: 1.88rem !important;
+      padding-right: 1.88rem !important;
+    }
+    .tab-content {
+      padding-left: 1.88rem !important;
+      padding-right: 1.88rem !important;
+      .tab-pane-content {
+        margin-top: 1.88rem !important;
+        .form-group {
+          margin-bottom: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  .tab-widget,
+  .timeline-media-spacing {
+    margin-top: 15px !important
+  }
+
+  /* Invoice Wrapper */
+  .invoice-wrapper {
+    padding: 15px !important
+  }
+
+  /* Table */
+  .recent-orders {
+    .card-body {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .card-table {
+    margin-top: 1rem;
+  }
+
+  /* Copyright */
+  .copyright {
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+  }
+  .right-sidebar-2-body {
+    padding: 0 15px;
+  }
+  .right-sidebar-2-body {
+    .no-col-space {
+      margin-bottom: 20px;
+    }
+  }
+}// compact-spacing

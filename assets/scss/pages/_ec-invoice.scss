@@ -1,0 +1,47 @@
+
+/** Invoice CSS **/
+.invoice-wrapper {
+    .text-dark {
+        font-weight: 500;
+    }
+    address {
+        span {
+            font-weight: 500;
+        }
+    }
+    .inv-tbl {
+        tbody {
+            tr {
+                &:nth-of-type(odd) > * {
+                    background-color: #f9f9f9;
+                    --bs-table-accent-bg: #f9f9f9;
+                }
+                td {
+                    vertical-align: middle;
+                    img {
+                        width: 40px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .inc-total {
+        ul {
+            li {
+                span {
+                    float: right;
+                }
+            }
+        }
+        .btn {
+            max-width: 180px;
+            margin-left: auto;
+        }
+    }
+    .disp-none {
+        @include media-breakpoint-down(xl) { 
+            display: none;
+          }
+    }
+}

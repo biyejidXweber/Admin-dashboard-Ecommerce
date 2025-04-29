@@ -1,0 +1,33 @@
+.user-list {
+    .vendor-thumb {
+        width: 45px;
+        height: 45px;
+    }
+}
+.ec-user-card  {
+    .img-fluid {
+        width: 70px;
+        border-radius: 15px;
+    }
+    .media-body {
+        h5 {
+            font-size: 16px;
+        }
+    }
+}
+.ec-ec-content-wrapper {
+    .view-detail {
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        font-size: 20px;
+        color: #bbb;
+    }
+    .modal-contact-detail {
+        .dropdown {
+            i{
+                margin: 0 15px;
+            }
+        }
+    }
+}

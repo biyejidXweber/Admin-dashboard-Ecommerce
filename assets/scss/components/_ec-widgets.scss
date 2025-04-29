@@ -1,0 +1,138 @@
+/*===== WIDGETS =====*/
+.profile-content {
+  .profile-left-spacing {
+    padding: 24px 0 24px 24px; 
+    @include media-breakpoint-down(lg) { 
+      padding: 24px 24px 0 24px;
+     }
+    .btn {
+      border-radius: 15px;
+    }
+  }
+  .nav-tabs.nav-style-border {
+    padding-bottom: 0;
+    .nav-item:first-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.widget-block {
+  position: relative;
+  padding: 1.9rem;
+  margin-bottom: 1.9rem;
+  &.bg-primary {
+    border-color: $primary;
+    p {
+      color: rgba($white, 0.7);
+    }
+    .progress {
+      background: rgba($white, 0.5);
+    }
+  }
+  &.bg-warning {
+    border-color: $warning;
+    p {
+      color: rgba($white, 0.7);
+    }
+    .progress {
+      background: rgba($white, 0.5);
+    }
+  }
+  &.bg-danger {
+    border-color: $danger;
+    p {
+      color: rgba($white, 0.7);
+    }
+    .progress {
+      background: rgba($white, 0.5);
+    }
+  }
+  &.bg-success {
+    border-color: $success;
+    p {
+      color: rgba($white, 0.7);
+    }
+    .progress {
+      background: rgba($white, 0.5);
+    }
+  }
+
+  i {
+    font-size: 1.38rem;
+  }
+}
+.widget-chart {
+  height: 70px;
+  #barChart {
+    width: 100%;
+    height: 100%;
+  }
+}
+.widget-media {
+  position: relative;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.03);
+  .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+  }
+  i {
+    font-size: 26px;
+  }
+}
+.widget-profile {
+  .card-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Widgets Dropdown */
+.widget-dropdown {
+  .dropdown-toggle {
+    color: $secondary;
+    text-transform: uppercase;
+
+    &.icon-burger-mini {
+      font-size: 1.5rem;
+      &:after {
+        display: none;
+      }
+      position: relative;
+      &:before {
+        font-family: $font-family-icon;
+        content: "\F1D9";
+      }
+    }
+  }
+  .dropdown-menu {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    box-shadow: 0px 5px 18px 0px rgba(229, 233, 242, 0.5);
+    min-width: auto;
+    right: 0 !important;
+    left: auto !important;
+    .dropdown-item {
+      padding: 0.3125rem 1.25rem;
+      a {
+        font-size: 0.875rem;
+        color: $secondary;
+        text-transform: capitalize;
+      }
+      &:hover {
+        background-color: transparent;
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

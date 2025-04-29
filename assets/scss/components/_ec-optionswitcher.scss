@@ -1,0 +1,39 @@
+/** Options sidebar css **/
+.ec-tools-sidebar-overlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 17;
+}
+.right-sidebar-2-body {
+  .no-col-space {
+    border: solid 1px #eee !important;
+    border-radius: 15px;
+  }
+}
+.right-sidebar-container-2 {
+  .btn-right-sidebar-2 {
+    width: 50% !important;
+    margin-right: 0 !important;
+    border: 0;
+    border-radius: 15px;
+  }
+  .btn-right-sidebar-2.btn-right-sidebar-2-active {
+    background-color: #eee !important;
+    color: $text-color-777 !important;
+    text-decoration: none !important;
+    margin-right: 0 !important;
+    border-radius: 15px !important;
+  }
+
+  .right-sidebar-2-select {
+    background: #eee;
+    color: $text-color-777;
+    border: none;
+    border-radius: 15px;
+  }
+}
